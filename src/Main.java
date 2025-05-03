@@ -21,6 +21,7 @@ public class Main {
             PizzaSize size = PizzaSize.valueOf(pizzaSizeResponse);
             PizzaCrustType crustType = PizzaCrustType.valueOf(pizzaCrustTypeResponse);
 
+            // Evaluate: Display specific description per crust type input
             switch (crustType) {
                 case THIN -> description = "Nice one! 😁";
                 case THICK -> description = "That pizza is THICK! 😲";
@@ -40,6 +41,7 @@ public class Main {
             // Exit: Close Scanner Object
             scn.close();
         }
+        // Process: Print if the argument is not illegal
         catch (IllegalArgumentException e){
             System.out.println("Invalid input: Enter only correct option!");
         }
