@@ -33,5 +33,5 @@ enum PizzaSize {
 }
 
 enum PizzaCrustType {
-    THIN, THICK, STUFFED;
+    THIN, THICK, STUFFED
 }
